@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+const int r=6, k=5;
+int r1,k1,nom,mas[r][k]={
+{11,12,13,14,15},
+{21,22,23,24,25},
+{31,32,33,34,35},
+{41,42,43,44,45},
+{51,52,53,54,55},
+{61,62,63,64,65}};
+//ob'
+
+for (r1=0;r1<r;r1++)//
+{
+    for (k1=0;k1<k;k1++)
+{
+    cout<<" "<<mas[r1][k1];}
+    cout<<endl;
+}
+cout << "Vuvedete estestveno chislo za indeks ot intervala [0..29]: ";
+cin>>nom;
+k1=nom % k;r1=nom/k;
+cout<< "Elementut e s indeksi: "<<r1<<"/"<<k1<<"  stoinost: "<<mas[r1][k1]<<endl;
+
+return 0;
+}
